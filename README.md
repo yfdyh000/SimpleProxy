@@ -7,7 +7,7 @@
 - 1) Supports file extension with alphabet only
   - 1.1) Full compatibility with Auto-proxy Rulelist (bracn 1.1.x)
   - 1.2) Uses optimized build-in rule system, drops support for Auto-proxy Rulelist (to do, branch 2.x)
-    - 1.2.1) <<example.com means to match string in second-level domain which can be optimized (recommended for better performance)
+    - 1.2.1) <<example.com means to match string in second-level domain (recommended, can be optimized)
     - 1.2.2) >>www.example.com means to match string in full domain name
     - 1.2.3) <>example means to match string in full address
     - 1.2.4) insert !! before rules means set rules to exception
