@@ -4,8 +4,14 @@
 ##How to use
 
 - 0) Simple Proxy will not override proxy settings of Firefox 
-- 1) Full compatibility with Auto-proxy Rulelist
-  - 1.1) Supports file extension with alphabet only
+- 1) Supports file extension with alphabet only
+  - 1.1) Full compatibility with Auto-proxy Rulelist (bracn 1.1.x)
+  - 1.2) Uses optimized build-in rule system, drops support for Auto-proxy Rulelist (to do, branch 2.x)
+    - 1.2.1) <<example.com means to match string in second-level domain which can be optimized (recommended for better performance)
+    - 1.2.2) >>www.example.com means to match string in full domain name
+    - 1.2.3) <>example means to match string in full address
+    - 1.2.4) insert !! before rules means set rules to exception
+    - 1.2.5) malformed rules wll NOT be loaded
 - 2) Server must match the form of server protocol::server adress::server port
   - 2.1) For example, socks::127.0.0.1::1080
   - 2.2) Supported protocol: http, socks, socks4
@@ -21,8 +27,7 @@
   - 5.2) firefox stands for Mozilla Firefox\browser\SimpleProxy\
   - 5.3) winuser stands for %UserProfile%\SimpleProxy\
 - 6) You can modify your rules by click "Edit Rulelist **"
-  - 6.1) Rulelist will auto-reload when close button of "editor" is clicked
-    - 6.1.1) You need to click "save" before you close the "editor" if any modification has been done
+  - 6.1) You need to click "save" before you close the "editor" if any modification has been done
   - 6.2) Subscriptions can not be modified
 - 7) You can clear the profile which is no longer in use by press "Clear Profile **"
 
@@ -30,9 +35,15 @@
 
 ## 使用说明
 
-- 0） Simple Proxy 不会覆盖 Firefox 本身的代理设置。
-- 1） 完全兼容 Auto-proxy 规则列表
-  - 1.1） 仅支持以字母作为文件后缀
+- 0） Simple Proxy 不会覆盖 Firefox 本身的代理设置
+- 1） 仅支持以字母作为文件后缀
+  - 1.1） 完全兼容 Auto-proxy 规则列表 （仅限 1.1.x 分支）
+  - 1.2） 使用自有的可优化匹配列表，不再兼容 Auto-proxy 规则列表 （计划中, 仅限2.x分支）
+    - 1.2.1） <<example.com 等同在二级域名中匹配字符串，可优化 （推荐使用）
+    - 1.2.2） >>www.example.com 等同在完整域名中匹配字符串
+    - 1.2.3） <>example 等同在完整地址中匹配字符串
+    - 1.2.4） 规则前添加 !! 等同将规则设为例外
+    - 1.2.5） 错误的格式将不被支持
 - 2) 服务器必须满足 类型::地址::端口 的格式
   - 2.1) 例如 socks::127.0.0.1::1080
   - 2.2) 支持的协议类型 http, socks, socks4
@@ -48,7 +59,6 @@
   - 5.2) firefox 代表 Mozilla Firefox\browser\SimpleProxy\
   - 5.3) winuser 代表 %UserProfile%\SimpleProxy\
 - 6) 可以通过点击 编辑规则** 来修改你的规则
-  - 6.1) 当你点击 编辑器 窗口的 关闭 按钮时规则便会自动重新加载。
-    - 6.1.1) 如果你有修改规则，你需要先点击 保存 按钮，然后才能关闭 编辑器 窗口。
+  - 6.1) 如果你有修改规则，你需要先点击 保存 按钮，然后再关闭 编辑器 窗口
   - 6.2) 订阅规则无法被修改
 - 7） 你可以通过点击 清除档案** 来清理掉不再使用的档案
