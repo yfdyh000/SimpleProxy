@@ -5,7 +5,7 @@
 
 - 0) Simple Proxy will not override proxy settings of Firefox 
 - 1) Supports file extension with alphabet only
-  - 1.1) Full compatibility with Auto-proxy Rulelist (bracn 1.1.x)
+  - 1.1) Full compatibility with Auto-proxy Rulelist (bracn 1.x)
 - 2) Server must match the form of server protocol::server adress::server port
   - 2.1) For example, socks::127.0.0.1::1080
   - 2.2) Supported protocol: http, socks, socks4
@@ -31,7 +31,7 @@
 
 - 0） Simple Proxy 不会覆盖 Firefox 本身的代理设置
 - 1） 仅支持以字母作为文件后缀
-  - 1.1） 完全兼容 Auto-proxy 规则列表 （仅限 1.1.x 分支）
+  - 1.1） 完全兼容 Auto-proxy 规则列表 （仅限 1.x 分支）
 - 2) 服务器必须满足 类型::地址::端口 的格式
   - 2.1) 例如 socks::127.0.0.1::1080
   - 2.2) 支持的协议类型 http, socks, socks4
