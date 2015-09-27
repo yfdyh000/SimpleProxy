@@ -25,7 +25,7 @@
   - 6.2) Subscriptions can not be modified
 - 7) You can clear the profile which is no longer in use by press "Clear Profile **"
 
---
+==
 
 ## 使用说明
 
