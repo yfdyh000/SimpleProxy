@@ -20,10 +20,10 @@
   - 5.1) profile stands for Profile\SimpleProxy\
   - 5.2) firefox stands for Mozilla Firefox\browser\SimpleProxy\
   - 5.3) winuser stands for %UserProfile%\SimpleProxy\
-- 6) You can modify your rules by click "Edit Rulelist **"
+- 6) You can modify your rules by click "Edit: Rulelist **"
   - 6.1) You need to click "save" before you close the "editor" if any modification has been done
-  - 6.2) Subscriptions can not be modified
-- 7) You can clear the profile which is no longer in use by press "Clear Profile **"
+  - 6.2) Subscription(s) can not be modified
+- 7) You can clear the profile which is no longer in use by press "Clear: Profile **"
 
 ==
 
@@ -46,7 +46,7 @@
   - 5.1) profile 代表 Profile\SimpleProxy\
   - 5.2) firefox 代表 Mozilla Firefox\browser\SimpleProxy\
   - 5.3) winuser 代表 %UserProfile%\SimpleProxy\
-- 6) 可以通过点击 编辑规则** 来修改你的规则
+- 6) 可以通过点击 编辑：规则** 来修改你的规则
   - 6.1) 如果你有修改规则，你需要先点击 保存 按钮，然后再关闭 编辑器 窗口
   - 6.2) 订阅规则无法被修改
-- 7） 你可以通过点击 清除档案** 来清理掉不再使用的档案
+- 7） 你可以通过点击 清除：档案** 来清理掉不再使用的档案
