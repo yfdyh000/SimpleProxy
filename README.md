@@ -6,6 +6,8 @@
 - 0) Simple Proxy will not override proxy settings of Firefox 
 - 1) Supports file extension with alphabet only
   - 1.1) Full compatibility with Auto-proxy Rulelist (branch 1.x)
+  - 1.2) Use ".simple" file extension to spedify build in match rule (higher priority, since branch 2.x)
+    - 1.2.1) Read 8) for more detail
 - 2) Server must match the form of server protocol::server adress::server port
   - 2.1) For example, socks::127.0.0.1::1080
   - 2.2) Supported protocol: http, socks, socks4
@@ -24,6 +26,11 @@
   - 6.1) You need to click "save" before you close the "editor" if any modification has been done
   - 6.2) Subscription(s) can not be modified
 - 7) You can clear the profile which is no longer in use by press "Clear: Profile **"
+- 8) For example, target url "http://www.example.com/this/is/an/example.html"
+  - 8.1) <<example.com means search example.com in the host "www.example.com" (return true)
+  - 8.2) >>an/example means search an/example in the path "/this/is/an/example.html" (return true)
+  - 8.3) <>com.this.is means search com.this.is in the whole address (return false)
+  - 8.4) The use of * (wildcard) is not supported
 
 ==
 
@@ -32,6 +39,8 @@
 - 0） Simple Proxy 不会覆盖 Firefox 本身的代理设置
 - 1） 仅支持以字母作为文件后缀
   - 1.1） 完全兼容 Auto-proxy 规则列表 （仅限 1.x 分支）
+  - 1.2） 使用文件后缀 ".simple" 来调用另一套匹配规则 （更高的优先度, 2.x 分支以后）
+    - 1.2.1) 详情请阅读 8)
 - 2) 服务器必须满足 类型::地址::端口 的格式
   - 2.1) 例如 socks::127.0.0.1::1080
   - 2.2) 支持的协议类型 http, socks, socks4
@@ -50,3 +59,8 @@
   - 6.1) 如果你有修改规则，你需要先点击 保存 按钮，然后再关闭 编辑器 窗口
   - 6.2) 订阅规则无法被修改
 - 7） 你可以通过点击 清除：档案** 来清理掉不再使用的档案
+- 8） 例如, 目标链接 "http://www.example.com/this/is/an/example.html"
+  - 8.1） <<example.com 意味着于主机 "www.example.com" 中搜索 example.com (结果true)
+  - 8.2） >>an/example 意味着于地址 "/this/is/an/example.html" 中搜索 an/example (结果true)
+  - 8.3） <>com.this.is 意味着于整个网址中搜索 com.this.is (结果false)
+  - 8.4） 不支持 * (通用匹配符)
