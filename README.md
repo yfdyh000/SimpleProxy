@@ -7,7 +7,7 @@
 - 1) Supports file extension with alphabet only
   - 1.1) Full compatibility with Auto-proxy Rulelist (branch 1.x)
 - 2) Server must match the form of server protocol::server adress::server port
-  - 2.1) For example, <font color=blue>socks::127.0.0.1::1080</font>
+  - 2.1) For example, <font color="blue">socks::127.0.0.1::1080</font>
   - 2.2) Supported protocol: http, socks, socks4
     - 2.2.1) http support both HTTP and HTTPS protocol
     - 2.2.2) socks support SOCKS V5 protocol
