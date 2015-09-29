@@ -4,7 +4,7 @@
 ##How to use
 
 - 0) Simple Proxy will not override proxy settings of Firefox 
-- 1) Supports file extension with alphabet only
+- 1) Support file extension with alphabet only
   - 1.1) Full compatibility with Auto-proxy Rulelist (branch 1.x)
   - 1.2) Use ".simple" file extension to spedify build in match rule (higher priority, since branch 2.x)
     - 1.2.1) Read 8) for more detail
