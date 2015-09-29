@@ -30,7 +30,8 @@
   - 8.1) <<example.com means search example.com in the host "www.example.com" (return true)
   - 8.2) >>an/example means search an/example in the path "/this/is/an/example.html" (return true)
   - 8.3) <>com.this.is means search com.this.is in the whole address (return false)
-  - 8.4) !! add to the first means exception for example, !!<<example.com
+  - 8.4) !! add to the head means exception
+    - 8.4.1) For example, !!<<example.com means matching example.com, but return to default proxy
   - 8.5) The use of * (wildcard) is not supported
 
 ==
@@ -64,5 +65,6 @@
   - 8.1） <<example.com 意味着于主机 "www.example.com" 中搜索 example.com (结果true)
   - 8.2） >>an/example 意味着于地址 "/this/is/an/example.html" 中搜索 an/example (结果true)
   - 8.3） <>com.this.is 意味着于整个网址中搜索 com.this.is (结果false)
-  - 8.4） !! 添加到规则头表示添加例外 例： !!<<example.com
+  - 8.4） !! 添加到规则头表示添加例外
+    - 8.4.1） 例, !!<<example.com 意味着匹配example.com，但返回默认代理
   - 8.5） 不支持 * (通用匹配符)
