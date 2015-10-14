@@ -7,7 +7,7 @@
     <em:targetApplication RDF:resource="rdf:#$Ezrz01"/>
   </RDF:Description>
   <RDF:Description RDF:about="urn:mozilla:extension:simpleproxy@jc3213.github"
-                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAEu8Qn5BiSmalxuUvfEgubBUQA/eH6TPlzFG9jQH7D8d2nog1iM0kFIOQVcJL3xtbyHWahxDLE3vtyGBSEtY8+gFZYAhE7vsE24MaQa514CzOMZeCA5BVMneCA/YdgZMGf6DldHJMo31K1iXuohZmpmq/WFQ7npCQICJck+0pvUZ">
+                   em:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAFSwQtwISDIpbdhXGrgYqpoNlypezge4vyy+x758H4n/4imtq7KWMXYeMS7LlKxB/esRfaZkWRHnh5u0/JJLjgYX2V2Axm7qHTrbc9MssW/ybgdB9GNFIDPaWOD6CgKa598AbSPC/VMtY4k+MO8IfW3EM0aZfag8aw2QJTL2HeN2">
     <em:updates RDF:resource="rdf:#$Azrz01"/>
   </RDF:Description>
   <RDF:Seq RDF:about="rdf:#$Azrz01">
@@ -17,5 +17,5 @@
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="38.0a1"
                    em:maxVersion="45.0"
-                   em:updateLink="https://github.com/jc3213/SimpleProxy/releases/download/1.2.7/simpleproxy-1.2.7-fx.xpi" />
+                   em:updateLink="https://github.com/jc3213/SimpleProxy/releases/download/1.3.0/simpleproxy-1.3.0-fx.xpi" />
 </RDF:RDF>
