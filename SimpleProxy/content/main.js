@@ -2,7 +2,7 @@
 
 var ChromeWindow = require('sdk/window/utils').getMostRecentBrowserWindow('navigator:browser');
 var SimplePrefs = require('sdk/simple-prefs');
-var Locales = require("sdk/l10n").get;
+var Locales = require('sdk/l10n').get;
 var {Cc, Ci, Cu} = require('chrome');
 var {Downloads} = Cu.import('resource://gre/modules/Downloads.jsm', {});
 var {console} = Cu.import('resource://gre/modules/Console.jsm', {});
