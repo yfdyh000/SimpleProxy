@@ -1,0 +1,167 @@
+{
+  "id": "simpleproxy@jc3213.github",
+  "title": "Simple Proxy",
+  "name": "simpleproxy",
+  "version": "1.5.0",
+  "description": "Simple, but Comprehensive",
+  "main": "content/main.js",
+  "author": "jc3213",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "permissions": {
+    "private-browsing": true,
+    "multiprocess": true
+  },
+  "homepage": "https://github.com/jc3213/SimpleProxy",
+  "updateURL": "https://raw.githubusercontent.com/jc3213/SimpleProxy/master/Update.rdf",
+  "updateKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFsJMzTMTZJsIQp2vatSpsLhjA/V42k2L68aUhbFkiCuqwC6lLd/Q16jkEWgR3l9M10gfckWUAaxVvOi9vBioleumyDXdi/v+vgcCfiXbJfzjaQ9DLGE10517g+vacQknzWecV2LUWAtOe/uqz1TPwh85jJU1lMBfeVkvt4XL9yQIDAQAB",
+  "license": "LGPL 3.0",
+  "preferences": [
+    {
+      "name": "proxy_0_list",
+      "type": "file",
+      "title": "Profile ⑴: Rulelist"
+    },
+    {
+      "name": "proxy_0_list",
+      "type": "string",
+      "title": "Profile ⑴: Rulelist",
+      "value": ""
+    },
+    {
+      "name": "edit_list_0",
+      "type": "control",
+      "title": "  ",
+      "label": "Edit: Rulelist ⑴"
+    },
+    {
+      "name": "proxy_0_server",
+      "type": "string",
+      "title": "Profile ⑴: Server",
+      "value": ""
+    },
+    {
+      "name": "clear_proxy_0",
+      "type": "control",
+      "title": "  ",
+      "label": "Clear: Profile ⑴"
+    },
+    {
+      "name": "proxy_1_list",
+      "type": "file",
+      "title": "Profile ⑵: Rulelist"
+    },
+    {
+      "name": "proxy_1_list",
+      "type": "string",
+      "title": "Profile ⑵: Rulelist",
+      "value": ""
+    },
+    {
+      "name": "edit_list_1",
+      "type": "control",
+      "title": "  ",
+      "label": "Edit: Rulelist ⑵"
+    },
+    {
+      "name": "proxy_1_server",
+      "type": "string",
+      "title": "Profile ⑵: Server",
+      "value": ""
+    },
+    {
+      "name": "clear_proxy_1",
+      "type": "control",
+      "title": "  ",
+      "label": "Clear: Profile ⑵"
+    },
+    {
+      "name": "proxy_2_list",
+      "type": "file",
+      "title": "Profile ⑶: Rulelist"
+    },
+    {
+      "name": "proxy_2_list",
+      "type": "string",
+      "title": "Profile ⑶: Rulelist",
+      "value": ""
+    },
+    {
+      "name": "edit_list_2",
+      "type": "control",
+      "title": "  ",
+      "label": "Edit: Rulelist ⑶"
+    },
+    {
+      "name": "proxy_2_server",
+      "type": "string",
+      "title": "Profile ⑶: Server",
+      "value": ""
+    },
+    {
+      "name": "clear_proxy_2",
+      "type": "control",
+      "title": "  ",
+      "label": "Clear: Profile ⑶"
+    },
+    {
+      "name": "proxy_3_list",
+      "type": "file",
+      "title": "Profile ⑷: Rulelist"
+    },
+    {
+      "name": "proxy_3_list",
+      "type": "string",
+      "title": "Profile ⑷: Rulelist",
+      "value": ""
+    },
+    {
+      "name": "edit_list_3",
+      "type": "control",
+      "title": "  ",
+      "label": "Edit: Rulelist ⑷"
+    },
+    {
+      "name": "proxy_3_server",
+      "type": "string",
+      "title": "Profile ⑷: Server",
+      "value": ""
+    },
+    {
+      "name": "clear_proxy_3",
+      "type": "control",
+      "title": "  ",
+      "label": "Clear: Profile ⑷"
+    },
+    {
+      "name": "proxy_4_list",
+      "type": "file",
+      "title": "Profile ⑸: Rulelist"
+    },
+    {
+      "name": "proxy_4_list",
+      "type": "string",
+      "title": "Profile ⑸: Rulelist",
+      "value": ""
+    },
+    {
+      "name": "edit_list_4",
+      "type": "control",
+      "title": "  ",
+      "label": "Edit: Rulelist ⑸"
+    },
+    {
+      "name": "proxy_4_server",
+      "type": "string",
+      "title": "Profile ⑸: Server",
+      "value": ""
+    },
+    {
+      "name": "clear_proxy_4",
+      "type": "control",
+      "title": "  ",
+      "label": "Clear: Profile ⑸"
+    }
+  ]
+}
