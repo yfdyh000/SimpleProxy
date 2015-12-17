@@ -5,6 +5,7 @@ var SimplePrefs = require('sdk/simple-prefs');
 var Locales = require("sdk/l10n").get;
 var {Cc, Ci, Cu} = require('chrome');
 var {Downloads} = Cu.import('resource://gre/modules/Downloads.jsm', {});
+var {console} = Cu.import('resource://gre/modules/Console.jsm', {});
 var {TextDecoder, TextEncoder, OS} = Cu.import('resource://gre/modules/osfile.jsm', {});
 var ProxyService = Cc['@mozilla.org/network/protocol-proxy-service;1'].getService(Ci.nsIProtocolProxyService);
 
@@ -14,10 +15,7 @@ var Directories = {
   winuser: OS.Path.join(OS.Constants.Path.homeDir, 'SimpleProxy'),
   addFolder: function () {
     OS.File.makeDir(this.profile);
-  },
-  delFolder: function () {
-    OS.File.removeDir(this.profile);
-  },
+  }
 };
 
 var Profiles = new Object();
@@ -59,7 +57,7 @@ var Preferences = {
     if (pref == 'list') {
       Execution.predict(profile);
     }
-  },
+  }
 };
 
 var Feeds = {
@@ -78,7 +76,7 @@ var Feeds = {
   },
   fetch: function (profile, probe) {
     if (probe == undefined) probe = 0;
-    if (probe > 3) return ChromeWindow.console.log(Locales('fetchFailed') + '\r\n' + Locales(profile.debug));
+    if (probe > 3) return console.log(Locales('fetchFailed') + '\r\n' + Locales(profile.debug));
     probe = probe + 1;
 
     var temp = profile.file + '_sp';
@@ -89,7 +87,7 @@ var Feeds = {
       Directories.addFolder();
       Feeds.fetch(profile, probe);
     });
-  },
+  }
 };
 
 var Execution = {
@@ -100,7 +98,7 @@ var Execution = {
       var array = profile.server.split('::');
       profile.proxy = ProxyService.newProxyInfo(array[0], array[1], array[2], 1, 0, null);
     } else {
-      ChromeWindow.console.log(Locales('invalidServer') + ' ' + profile.profile);
+      console.log(Locales('invalidServer') + '\r\n' + Locales(profile.debug));
     }
   },
   predict: function (profile) {
@@ -125,7 +123,7 @@ var Execution = {
       }
       this.scan(profile);
     } else {
-      return ChromeWindow.console.log(Locales('invalidRulelist') + '\r\n' + Locales(profile.debug));
+      return console.log(Locales('invalidRulelist') + '\r\n' + Locales(profile.debug));
     }
   },
   scan: function (profile) {
@@ -150,7 +148,7 @@ var Execution = {
       }
     }, function onFailure(reason) {
       if (reason instanceof OS.File.Error && reason.becauseNoSuchFile) {
-        ChromeWindow.console.log(Locales('fileNotExsit') + '\r\n' + Locales(profile.debug));
+        console.log(Locales('fileNotExsit') + '\r\n' + Locales(profile.debug));
       }
     });
   },
@@ -196,10 +194,10 @@ var Execution = {
       }, false);
     }, function onFailure(reason) {
       if (reason instanceof OS.File.Error && reason.becauseNoSuchFile) {
-        return ChromeWindow.console.log(Locales('fileNotExsit') + '\r\n' + Locales(profile.debug));
+        return console.log(Locales('fileNotExsit') + '\r\n' + Locales(profile.debug));
       }
     });
-  },
+  }
 };
 
 var SimpleProxy = {
@@ -246,7 +244,7 @@ var SimpleProxy = {
       }
     }
     return proxy;
-  },
+  }
 }
 
 exports.main = function (options, callbacks) {
