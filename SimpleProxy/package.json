@@ -2,7 +2,7 @@
   "id": "simpleproxy@jc3213.github",
   "title": "Simple Proxy",
   "name": "simpleproxy",
-  "version": "2.1.3",
+  "version": "2.2.0",
   "description": "Simple, but Comprehensive",
   "main": "index.js",
   "author": "jc3213",
@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/jc3213/SimpleProxy",
   "updateURL": "https://raw.githubusercontent.com/jc3213/Misc/master/Update/SimpleProxy.rdf",
-  "updateLink": "https://github.com/jc3213/SimpleProxy/releases/download/2.1.3/simple_proxy-2.1.3-fx.xpi",
+  "updateLink": "https://github.com/jc3213/SimpleProxy/releases/download/2.2.0/simple_proxy-2.2.0-fx.xpi",
   "updateKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDFsJMzTMTZJsIQp2vatSpsLhjA/V42k2L68aUhbFkiCuqwC6lLd/Q16jkEWgR3l9M10gfckWUAaxVvOi9vBioleumyDXdi/v+vgcCfiXbJfzjaQ9DLGE10517g+vacQknzWecV2LUWAtOe/uqz1TPwh85jJU1lMBfeVkvt4XL9yQIDAQAB",
   "license": "LGPL 3.0",
   "preferences": [
