@@ -2,7 +2,7 @@
   "id": "simpleproxy@jc3213.github",
   "title": "Simple Proxy",
   "name": "simpleproxy",
-  "version": "1.5.6ESR",
+  "version": "1.6.0ESR",
   "description": "Simple, but Comprehensive",
   "main": "content/main.js",
   "author": "jc3213",
