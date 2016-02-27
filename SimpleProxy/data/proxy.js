@@ -3,15 +3,14 @@
 var Storage = require("../lib/storage.js");
 var Services = require("../lib/services.js");
 
+var white, match;
+
 var Proxy = {
   applyFilter: function (service, uri, proxy) {
     for (var i in Storage) {
       if (!Storage[i].server.property || !Storage[i].list.file) continue;
 
-      var white = Storage[i].list.pattern.white;
-      var match = Storage[i].list.pattern.match;
-
-      if (white.length > 0) {
+      if (white = Storage[i].list.pattern.white) {
         white.forEach(function (element, index, array) {
           if (element.matches(uri)) {
             return proxy;
@@ -19,7 +18,7 @@ var Proxy = {
         });
       }
 
-      if (match.length > 0) {
+      if (match = Storage[i].list.pattern.match) {
         match.forEach(function (element, index, array) {
           if (element.matches(uri)) {
             return server;
