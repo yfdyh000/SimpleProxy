@@ -10,15 +10,15 @@ var Proxy = {
     for (var i in Storage) {
       if (!(server = Storage[i].server.property) || !Storage[i].list.file) continue;
 
-      if (white = Storage[i].list.pattern.white) {
+      var patterns = Storage[i].list.pattern
+      if (white = patterns.white) {
         for (var i in white) {
           if (white[i].matches(uri)) {
             return proxy;
           }
         }
       }
-
-      if (match = Storage[i].list.pattern.match) {
+      if (match = patterns.match) {
         for (var x in match) {
           if (match[x].matches(uri)) {
             return server;
