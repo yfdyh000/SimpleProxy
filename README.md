@@ -1,13 +1,13 @@
-##Lisence (授权协议)
+##License (授权协议)
 
-###<a href="https://github.com/jc3213/SimpleProxy/blob/master/LICENSE">LGPL v3.0</a>
+###[LGPL v3.0](https://github.com/jc3213/SimpleProxy/blob/master/LICENSE)
 
 ##Manual (用户手册)
 
-###<a href="https://github.com/jc3213/Misc/blob/master/Manual/en-US/SimpleProxy.md">How to Use</a>
-###<a href="https://github.com/jc3213/Misc/blob/master/Manual/zh-CN/SimpleProxy.md">使用说明</a>
+###[How to Use](https://github.com/jc3213/Misc/blob/master/Manual/en-US/SimpleProxy.md)
+###[使用说明](https://github.com/jc3213/Misc/blob/master/Manual/zh-CN/SimpleProxy.md)
 
 ##Feedback (用户反馈)
 
-###File an <a href="https://github.com/jc3213/Misc/issues">issue</a> here
-###点<a href="https://github.com/jc3213/Misc/issues">此</a>提交Issue
+###File an issue [here](https://github.com/jc3213/Misc/issues)
+###反馈错误请[点此](https://github.com/jc3213/Misc/issues)
