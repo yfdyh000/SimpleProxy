@@ -3,7 +3,14 @@
 var {Cu} = require("chrome");
 var {TextDecoder, OS} = Cu.import("resource://gre/modules/osfile.jsm", {});
 
-exports.folder = OS.Path.join(OS.Constants.Path.profileDir, "SimpleProxy");
+var folder = OS.Path.join(OS.Constants.Path.profileDir, "SimpleProxy");
+exports.createFolder = function () {
+  OS.File.makeDir(folder);
+};
+exports.removeFolder = function () {
+  OS.File.removeDir(folder);
+};
+exports.folder = folder;
 exports.fileData = function (storage, callback) {
   OS.File.stat(storage.file).then(
     function onSuccess(data) {
@@ -29,10 +36,4 @@ exports.fileToStream = function (storage, callback) {
 };
 exports.copyFile = function (object, target) {
   OS.File.move(object, target);
-};
-exports.makeFolder = function (folder) {
-  OS.File.makeDir(folder);
-};
-exports.deleteFolder = function (folder) {
-  OS.File.removeDir(folder);
 };

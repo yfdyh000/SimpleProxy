@@ -48,9 +48,9 @@ var Proxy = {
   }
 }
 
-exports.addListener = function () {
+exports.on = function () {
   Services.pps.registerFilter(Proxy, 3);
 };
-exports.removeListener = function () {
+exports.off = function () {
   Services.pps.unregisterFilter(Proxy);
 };

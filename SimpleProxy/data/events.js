@@ -2,7 +2,7 @@
 
 var Storage = require("../lib/storage.js");
 var Preference = require("../lib/pref-utils.js");
-var Services = require("../lib/services.js");
+var FileIO = require("../lib/file-io.js");
 var Worker = require("./worker.js");
 var Window = require("sdk/window/utils").getMostRecentBrowserWindow("navigator:browser");
 
@@ -40,24 +40,24 @@ function spawnEditor(storage) {
 function manageListener(method, name, number) {
   if (method = "add") {
     if (name.includes("clear")) {
-      Preference.addListener(name, function () {
+      Preference.on(name, function () {
         Preference.setValue(number + "_list", "");
         Preference.setValue(number + "_server", "");
       });
     } else if (name.includes("edit")) {
-      Preference.addListener(name, function () {
+      Preference.on(name, function () {
         var storage = Storage["profile" + number];
         spawnEditor(storage);
       });
     }
   } else {
     if (name.includes("clear")) {
-      Preference.removeListener(name, function () {
+      Preference.off(name, function () {
         Preference.setValue(number + "_list", "");
         Preference.setValue(number + "_server", "");
       });
     } else if (name.includes("edit")) {
-      Preference.removeListener(name, function () {
+      Preference.off(name, function () {
         var storage = Storage["profile" + number];
         spawnEditor(storage);
       });
@@ -73,7 +73,8 @@ function pending(name) {
   }
 }
 
-exports.startup = function () {
+exports.on = function () {
+  FileIO.createFolder();
   prefOption.forEach(function (element, index, array) {
     var list = element[0], server = element[1], edit = element[2], clear = element[3];
     Worker.prefToList(list);
@@ -81,13 +82,13 @@ exports.startup = function () {
     manageListener("add", edit, index);
     manageListener("add", clear, index);
   });
-  Preference.addListener("", pending);
+  Preference.on("", pending);
 };
-exports.shutdown = function () {
+exports.off = function () {
   prefOption.forEach(function (element, index, array) {
     var edit = element[2], clear = element[3];
     manageListener("remove", edit, index);
     manageListener("remove", clear, index);
   });
-  Preference.removeListener("", pending);
+  Preference.off("", pending);
 }

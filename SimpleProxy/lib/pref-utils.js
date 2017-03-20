@@ -8,9 +8,9 @@ exports.getValue = function (name) {
 exports.setValue = function (name, value) {
   SimplePrefs.prefs[name] = value;
 };
-exports.addListener = function (name, callback) {
+exports.on = function (name, callback) {
   SimplePrefs.on(name, callback);
 };
-exports.removeListener = function (name, callback) {
+exports.off = function (name, callback) {
   SimplePrefs.off(name, callback);
 };
