@@ -2,12 +2,14 @@
   "id": "simpleproxy@jc3213.github",
   "title": "Simple Proxy",
   "name": "simpleproxy",
-  "version": "1.8.0",
+  "version": "1.8.0.1",
   "description": "Simple, and Handiness",
   "main": "index.js",
   "author": "jc3213",
   "engines": {
-    "firefox": ">=38.0a1"
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1",
+    "thunderbird": ">=38.0a1 <=55.0"
   },
   "locales": {
     "ja": {
@@ -17,97 +19,101 @@
       "description": "简约且轻便"
     }
   },
+  "permissions": {
+    "private-browsing": true,
+    "multiprocess": true
+  },
   "homepage": "https://github.com/jc3213/SimpleProxy",
   "updateURL": "https://raw.githubusercontent.com/jc3213/Misc/master/Update/SimpleProxy.rdf",
-  "updateLink": "https://github.com/jc3213/SimpleProxy/releases/download/1.8.0/simple_proxy-1.8.0-fx.xpi",
+  "updateLink": "https://github.com/jc3213/SimpleProxy/releases/download/1.8.0.1/simple_proxy-1.8.0.1-an+fx+tb.xpi",
   "license": "LGPL-3.0",
   "preferences": [
     {
       "name": "0_list",
       "type": "file",
-      "title": "Profile ⑴: Rulelist"
+      "title": "Profile Ⅰ: Rulelist"
     },
     {
       "name": "0_list",
       "type": "string",
-      "title": "Profile ⑴: Rulelist",
+      "title": "Profile Ⅰ: Rulelist",
       "value": ""
     },
     {
       "name": "0_edit",
       "type": "control",
       "title": "  ",
-      "label": "Edit: Rulelist ⑴"
+      "label": "Edit: Rulelist Ⅰ"
     },
     {
       "name": "0_server",
       "type": "string",
-      "title": "Profile ⑴: Server",
+      "title": "Profile Ⅰ: Server",
       "value": ""
     },
     {
       "name": "0_clear",
       "type": "control",
       "title": "  ",
-      "label": "Clear: Profile ⑴"
+      "label": "Clear: Profile Ⅰ"
     },
     {
       "name": "1_list",
       "type": "file",
-      "title": "Profile ⑵: Rulelist"
+      "title": "Profile Ⅱ: Rulelist"
     },
     {
       "name": "1_list",
       "type": "string",
-      "title": "Profile ⑵: Rulelist",
+      "title": "Profile Ⅱ: Rulelist",
       "value": ""
     },
     {
       "name": "1_edit",
       "type": "control",
       "title": "  ",
-      "label": "Edit: Rulelist ⑵"
+      "label": "Edit: Rulelist Ⅱ"
     },
     {
       "name": "1_server",
       "type": "string",
-      "title": "Profile ⑵: Server",
+      "title": "Profile Ⅱ: Server",
       "value": ""
     },
     {
       "name": "1_clear",
       "type": "control",
       "title": "  ",
-      "label": "Clear: Profile ⑵"
+      "label": "Clear: Profile Ⅱ"
     },
     {
       "name": "2_list",
       "type": "file",
-      "title": "Profile ⑶: Rulelist"
+      "title": "Profile Ⅲ: Rulelist"
     },
     {
       "name": "2_list",
       "type": "string",
-      "title": "Profile ⑶: Rulelist",
+      "title": "Profile Ⅲ: Rulelist",
       "value": ""
     },
     {
       "name": "2_edit",
       "type": "control",
       "title": "  ",
-      "label": "Edit: Rulelist ⑶"
+      "label": "Edit: Rulelist Ⅲ"
     },
     {
       "name": "2_server",
       "type": "string",
-      "title": "Profile ⑶: Server",
+      "title": "Profile Ⅲ: Server",
       "value": ""
     },
     {
       "name": "2_clear",
       "type": "control",
       "title": "  ",
-      "label": "Clear: Profile ⑶"
+      "label": "Clear: Profile Ⅲ"
     }
   ]
 }
