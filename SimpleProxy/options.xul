@@ -4,7 +4,7 @@
 <setting type="control">
   <button id="simpleproxy-pac" label="&simpleproxy-pac;"/>
 </setting>
-<setting pref="extensions.simpleproxy.number" type="integer" title="&simpleproxy-number;"/>
+<setting pref="extensions.simpleproxy.number" type="integer" min="1" max="9" title="&simpleproxy-number;"/>
 <setting pref="extensions.simpleproxy.list.0" id="simpleproxy-list_0" type="file" title="&simpleproxy-profile0;"/>
 <setting pref="extensions.simpleproxy.list.0" id="simpleproxy-list.0" type="string" title="&simpleproxy-list;"/>
 <setting type="control">

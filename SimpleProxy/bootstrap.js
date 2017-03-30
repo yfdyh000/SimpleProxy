@@ -180,16 +180,18 @@ var Events = {
   pendingOption: function () {
     Storage = [];
     try {
-      var num = Preferences.getValue( { name: "number", type: "integer" } );
-      if (num > 9) {
-        Preferences.setValue( { name: "number", type: "integer" } , 9);
-      } else if (num < 1) {
-        Preferences.setValue( { name: "number", type: "integer" } , 1);
-      }
+      Preferences.getValue( { name: "number", type: "integer" } );
     } catch (e) {
       Preferences.resetValue( { name: "number", type: "integer", value: 1 } );
     } finally {
       var num = Preferences.getValue( { name: "number", type: "integer" } );
+      if (num > 9) {
+        num = 9;
+        Preferences.setValue( { name: "number", type: "integer" } , 9);
+      } else if (num < 1) {
+        num = 1;
+        Preferences.setValue( { name: "number", type: "integer" } , 1);
+      }
     }
     for (var i = 0; i < num; i ++) {
       try {
