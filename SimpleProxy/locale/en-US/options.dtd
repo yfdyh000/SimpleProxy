@@ -1,0 +1,15 @@
+<!ENTITY simpleproxy-profile0 "Proxy Profile Ⅰ">
+<!ENTITY simpleproxy-profile1 "Proxy Profile Ⅱ">
+<!ENTITY simpleproxy-profile2 "Proxy Profile Ⅲ">
+<!ENTITY simpleproxy-profile3 "Proxy Profile Ⅳ">
+<!ENTITY simpleproxy-profile4 "Proxy Profile Ⅴ">
+<!ENTITY simpleproxy-profile5 "Proxy Profile Ⅵ">
+<!ENTITY simpleproxy-profile6 "Proxy Profile Ⅶ">
+<!ENTITY simpleproxy-profile7 "Proxy Profile Ⅷ">
+<!ENTITY simpleproxy-profile8 "Proxy Profile Ⅸ">
+<!ENTITY simpleproxy-list "List">
+<!ENTITY simpleproxy-editor "Edit">
+<!ENTITY simpleproxy-server "Server">
+<!ENTITY simpleproxy-reset "Reset">
+<!ENTITY simpleproxy-pac "Make PAC">
+<!ENTITY simpleproxy-number "Number of Profiles">

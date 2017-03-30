@@ -1,0 +1,15 @@
+<!ENTITY simpleproxy-profile0 "代理档案Ⅰ">
+<!ENTITY simpleproxy-profile1 "代理档案Ⅱ">
+<!ENTITY simpleproxy-profile2 "代理档案Ⅲ">
+<!ENTITY simpleproxy-profile3 "代理档案Ⅳ">
+<!ENTITY simpleproxy-profile4 "代理档案Ⅴ">
+<!ENTITY simpleproxy-profile5 "代理档案Ⅵ">
+<!ENTITY simpleproxy-profile6 "代理档案Ⅶ">
+<!ENTITY simpleproxy-profile7 "代理档案Ⅷ">
+<!ENTITY simpleproxy-profile8 "代理档案Ⅸ">
+<!ENTITY simpleproxy-list "规则表">
+<!ENTITY simpleproxy-editor "编辑">
+<!ENTITY simpleproxy-server "服务器">
+<!ENTITY simpleproxy-reset "重置">
+<!ENTITY simpleproxy-pac "生成PAC">
+<!ENTITY simpleproxy-number "档案数目">

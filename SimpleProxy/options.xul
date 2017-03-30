@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!DOCTYPE page SYSTEM "chrome://simpleproxy/locale/options.dtd">
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<setting type="control">
+  <button id="simpleproxy-pac" label="&simpleproxy-pac;"/>
+</setting>
+<setting pref="extensions.simpleproxy.number" type="integer" title="&simpleproxy-number;"/>
+<setting pref="extensions.simpleproxy.list.0" id="simpleproxy-list_0" type="file" title="&simpleproxy-profile0;"/>
+<setting pref="extensions.simpleproxy.list.0" id="simpleproxy-list.0" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.0" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.0" id="simpleproxy-server.0" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.0" label="&simpleproxy-reset;"/>
+</setting>
+<setting pref="extensions.simpleproxy.list.1" id="simpleproxy-list_1" type="file" title="&simpleproxy-profile1;"/>
+<setting pref="extensions.simpleproxy.list.1" id="simpleproxy-list.1" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.1" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.1" id="simpleproxy-server.1" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.1" label="&simpleproxy-reset;"/>
+</setting>
+<setting pref="extensions.simpleproxy.list.2" id="simpleproxy-list_2" type="file" title="&simpleproxy-profile2;"/>
+<setting pref="extensions.simpleproxy.list.2" id="simpleproxy-list.2" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.2" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.2" id="simpleproxy-server.2" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.2" label="&simpleproxy-reset;"/>
+</setting>
+<setting pref="extensions.simpleproxy.list.3" id="simpleproxy-list_3" type="file" title="&simpleproxy-profile3;"/>
+<setting pref="extensions.simpleproxy.list.3" id="simpleproxy-list.3" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.3" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.3" id="simpleproxy-server.3" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.3" label="&simpleproxy-reset;"/>
+</setting>
+<setting pref="extensions.simpleproxy.list.4" id="simpleproxy-list_4" type="file" title="&simpleproxy-profile4;"/>
+<setting pref="extensions.simpleproxy.list.4" id="simpleproxy-list.4" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.4" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.4" id="simpleproxy-server.4" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.4" label="&simpleproxy-reset;"/>
+</setting>
+<setting pref="extensions.simpleproxy.list.5" id="simpleproxy-list_5" type="file" title="&simpleproxy-profile5;"/>
+<setting pref="extensions.simpleproxy.list.5" id="simpleproxy-list.5" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.5" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.5" id="simpleproxy-server.5" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.5" label="&simpleproxy-reset;"/>
+</setting>
+<setting pref="extensions.simpleproxy.list.6" id="simpleproxy-list_6" type="file" title="&simpleproxy-profile6;"/>
+<setting pref="extensions.simpleproxy.list.6" id="simpleproxy-list.6" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.6" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.6" id="simpleproxy-server.6" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.6" label="&simpleproxy-reset;"/>
+</setting>
+<setting pref="extensions.simpleproxy.list.7" id="simpleproxy-list_7" type="file" title="&simpleproxy-profile7;"/>
+<setting pref="extensions.simpleproxy.list.7" id="simpleproxy-list.7" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.7" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.7" id="simpleproxy-server.7" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.7" label="&simpleproxy-reset;"/>
+</setting>
+<setting pref="extensions.simpleproxy.list.8" id="simpleproxy-list_8" type="file" title="&simpleproxy-profile8;"/>
+<setting pref="extensions.simpleproxy.list.8" id="simpleproxy-list.8" type="string" title="&simpleproxy-list;"/>
+<setting type="control">
+  <button id="simpleproxy-editor.8" label="&simpleproxy-editor;"/>
+</setting>
+<setting pref="extensions.simpleproxy.server.8" id="simpleproxy-server.8" type="string" title="&simpleproxy-server;"/>
+<setting type="control">
+  <button id="simpleproxy-reset.8" label="&simpleproxy-reset;"/>
+</setting>
+</vbox>

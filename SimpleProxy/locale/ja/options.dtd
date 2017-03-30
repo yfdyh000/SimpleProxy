@@ -1,0 +1,15 @@
+<!ENTITY simpleproxy-profile0 "プロキシプロフィールⅠ">
+<!ENTITY simpleproxy-profile1 "プロキシプロフィールⅡ">
+<!ENTITY simpleproxy-profile2 "プロキシプロフィールⅢ">
+<!ENTITY simpleproxy-profile3 "プロキシプロフィールⅣ">
+<!ENTITY simpleproxy-profile4 "プロキシプロフィールⅤ">
+<!ENTITY simpleproxy-profile5 "プロキシプロフィールⅥ">
+<!ENTITY simpleproxy-profile6 "プロキシプロフィールⅦ">
+<!ENTITY simpleproxy-profile7 "プロキシプロフィールⅧ">
+<!ENTITY simpleproxy-profile8 "プロキシプロフィールⅨ">
+<!ENTITY simpleproxy-list "リスト">
+<!ENTITY simpleproxy-editor "編集">
+<!ENTITY simpleproxy-server "サーバー">
+<!ENTITY simpleproxy-reset "リセット">
+<!ENTITY simpleproxy-pac "PAC制作">
+<!ENTITY simpleproxy-number "プロフィール数">

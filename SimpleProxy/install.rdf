@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>simpleproxy@jc3213.github</em:id>
+    <em:updateURL>https://raw.githubusercontent.com/jc3213/Misc/master/Update/SimpleProxy.rdf</em:updateURL>
+    <em:optionsType>2</em:optionsType>
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
+    <em:version>1.9.4</em:version>
+    <em:name>Simple Proxy</em:name>
+    <em:creator>jc3213</em:creator>
+    <em:homepageURL>https://github.com/jc3213/SimpleProxy/</em:homepageURL>
+    <em:description>A Simple and Lightweight Proxy Manager</em:description>
+    <em:localized>
+      <Description>
+        <em:locale>ja</em:locale>
+        <em:name>Simple Proxy</em:name>
+        <em:creator>jc3213</em:creator>
+        <em:homepageURL>https://github.com/jc3213/SimpleProxy/</em:homepageURL>
+        <em:description>シンプルかつ軽量なプロキシマネージャー</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>zh-CN</em:locale>
+        <em:name>Simple Proxy</em:name>
+        <em:creator>jc3213</em:creator>
+        <em:homepageURL>https://github.com/jc3213/SimpleProxy/</em:homepageURL>
+        <em:description>一款简易且轻便的代理服务管理器</em:description>
+      </Description>
+    </em:localized>
+    <em:targetApplication><!-- Firefox -->
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>27.0a1</em:minVersion>
+        <em:maxVersion>*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication><!-- Fennec -->
+      <Description>
+        <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+        <em:minVersion>27.0a1</em:minVersion>
+        <em:maxVersion>*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <em:targetApplication><!-- Thunder Bird -->
+      <Description>
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>27.0a1</em:minVersion>
+        <em:maxVersion>55.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
